@@ -1,0 +1,305 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Alice&family=Arbutus&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Actor', sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+  position: relative;
+}
+
+/* Effets visuels en background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 20%, rgba(75,139,255,0.1), transparent 40%), 
+              radial-gradient(circle at 80% 80%, rgba(75,139,255,0.1), transparent 40%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* HEADER */
+header {
+  background-color: #5a2e0c; /* marron foncé */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.logo h1 {
+  font-family: 'Arbutus', cursive;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Alice', serif;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+nav a:hover {
+  color: #f0d8b6;
+}
+
+/* Boutons dans le header */
+nav a.btn-header {
+  background-color: #4b8bff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a.btn-header:hover {
+  background-color: #3666d1;
+}
+
+/* SECTION HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  background-color: #f9f9ff;
+}
+
+.hero-text {
+  max-width: 55%;
+}
+
+.hero-text h2 {
+  font-family: 'Arbutus', cursive;
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-family: 'Actor', sans-serif;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-principal, .btn-secondaire, .btn-contact {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Boutons hero */
+.btn-principal {
+  background-color: #4b8bff;
+  color: white;
+  font-family: 'Alice', serif;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn-principal:hover {
+  background-color: #3666d1;
+}
+
+.btn-secondaire {
+  border: 2px solid #4b8bff;
+  color: #4b8bff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: 'Alice', serif;
+}
+
+.btn-secondaire:hover {
+  background-color: #4b8bff;
+  color: white;
+}
+
+.hero-image img.hero-img {
+  width: 300px;          /* plus petite */
+  border-radius: 15px;   /* bords arrondis */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img.hero-img:hover {
+  transform: scale(1.03);
+}
+
+/* QUESTIONS transformées en boutons */
+.questions {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 10%;
+}
+
+.question-btn {
+  display: block;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 260px;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Arbutus', cursive;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.question-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  background-color: #4b8bff;
+  color: white;
+}
+
+.question-btn p {
+  font-family: 'Actor', sans-serif;
+  color: inherit;
+  margin-top: 8px;
+}
+
+/* CONTACT */
+.contact {
+  background-color: #4b8bff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.contact strong {
+  font-family: 'Alice', serif;
+}
+
+.contact img {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/* PROMOTION */
+.promo {
+  background-color: #f4f7ff;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.promo-text h2 {
+  font-family: 'Arbutus', cursive;
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.promo-text h3 {
+  font-family: 'Alice', serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.btn-contact {
+  display: inline-block;
+  background-color: #4b8bff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-family: 'Alice', serif;
+  text-decoration: none;
+}
+
+.btn-contact:hover {
+  background-color: #3666d1;
+}
+
+/* Images promo */
+.promo-images {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 60px;
+}
+
+.promo-images img.promo-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Image promo centrale plus grande */
+.promo-images img.promo-central {
+  width: 330px;
+  height: 400px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.promo-images img.promo-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ANDROID */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carre {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #5a2e0c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Actor', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Déploiement Web - Connect In</title>
+
+  <!-- Polices -->
+  <link href="https://fonts.googleapis.com/css2?family=Actor&family=Alice&family=Arbutus&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== STYLES GLOBAUX ===== */
+    :root {
+      --marron: #5a2e0c;
+      --marron-fonce: #4b2e17;
+      --bleu: #4b8bff;
+      --gris: #f5f5f5;
+      --noir: #000
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Actor', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Alice', serif; margin: 0; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== HEADER ===== */
+    header {
+      background-color: var(--marron);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img { height: 45px; }
+    .logo h1 { font-family: 'Arbutus', cursive; font-size: 1.5rem; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      font-family: 'Alice', serif;
+      color: white;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover { color: #f0d8b6; }
+
+    nav a.btn-header {
+      background-color: var(--bleu);
+      padding: 8px 15px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    nav a.btn-header:hover { background-color: #3666d1; }
+
+    /* ===== SECTION PRINCIPALE ===== */
+    .deploiement-section {
+      text-align: center;
+      padding: 40px 15px;
+    }
+
+    .deploiement-section h2 {
+      font-family: 'Arbutus', cursive;
+      color: var(--marron-fonce);
+      font-size: 1.6rem;
+      margin-bottom: 30px;
+    }
+
+    .deploiement-section p {
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.5em;
+    }
+
+    /* ===== GRILLE D'ÉTAPES ===== */
+    .etapes-grille {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto 40px auto;
+    }
+
+    .carte {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .carte:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .carte h4 {
+      font-family: 'Arbutus', cursive;
+      color: var(--marron-fonce);
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .carte img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .carte p {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.4em;
+    }
+
+    /* ===== OPTIONS ===== */
+    .options-grille {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+    }
+
+    .option {
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      padding: 20px;
+      background-color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .option:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .option h4 {
+      font-family: 'Arbutus', cursive;
+      color: var(--marron-fonce);
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .option img {
+      width: 75px;
+      height: 75px;
+      object-fit: contain;
+      margin-bottom: 8px;
+    }
+
+    .option p {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.5em;
+    }
+
+    /* ===== BOUTON PRINCIPAL ===== */
+    .btn-principal {
+      display: inline-block;
+      background-color: var(--bleu);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 20px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .btn-principal:hover {
+      transform: scale(1.05);
+      background-color: #3666d1;
+    }
+
+        /* --- BOUTONS EN BAS --- */
+    .buttons-zone {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn-principal {
+      background-color: #2a5be2;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    .btn-principal:hover {
+      transform: scale(1.05);
+      background-color: #1e47b8;
+    }
+
+    .btn-contact {
+      background-color: #e2e2e2;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    .btn-contact:hover {
+      transform: scale(1.05);
+      background-color: #ccc;
+    }
+    
+
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="image/logo.png" alt="Logo Connect In">
+      <h1>Connect In</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">ACCUEIL</a></li>
+        <li><a href="index5.html">SERVICES</a></li>
+        <li><a href="index6.html" class="btn-header">Passer Commande</a></li>
+        <li><a href="index3.html" class="btn-header">Déploiement Web</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECTION DÉPLOIEMENT -->
+  <section class="deploiement-section">
+    <h2>La publication officielle d’un site Web</h2>
+
+        <h3 style="font-family:'Arbutus', cursive; color:var(--noir); margin-bottom:25px;">1. Qu’est-ce que le déploiement d’un site web ?</h3>
+    <p>Le déploiement (ou publication) est le processus qui consiste à rendre ton site web accessible au public sur Internet. Avant le déploiement, ton site n’existe que sur ton ordinateur (en local). Après déploiement, il devient visible via une adresse web (nom de domaine).</p>
+
+        <h3 style="font-family:'Arbutus', cursive; color:var(--noir); margin-bottom:25px;">2. Étapes pour déployer un site web</h3>
+    <p><strong>Choisir ton type d’hébergement :</strong> L’hébergement, c’est “l’endroit” où ton site est stocké. Il y’a trois types d’hébergement.</p>
+
+    <div class="etapes-grille">
+      <div class="carte">
+        <h4>Gratuit</h4>
+        <img src="image/image17.jfif" alt="Gratuit">
+        <p>Utilisez GitHub Pages, Netlify ou Vercel pour héberger gratuitement votre site.</p>
+      </div>
+
+      <div class="carte">
+        <h4>Payant</h4>
+        <img src="image/image18.jfif" alt="Payant">
+        <p>Optez pour un hébergement professionnel avec nom de domaine personnalisé.</p>
+      </div>
+
+      <div class="carte">
+        <h4>Serveur personnel</h4>
+        <img src="image/image19.jfif" alt="Serveur personnel">
+        <p>Hébergez votre site sur un serveur que vous gérez vous-même pour un contrôle total.</p>
+      </div>
+    </div>
+
+    <p><strong>Choisir un nom de domaine :</strong> Le nom de domaine est l’adresse web de votre site. Il doit être unique et représentatif de votre contenu.C’est l’adresse de ton site, ex. : www.tonsite.com. Tu peux l’acheter via un registrar (OVH, Namecheap, Hostinger…).</p>
+
+    <p><strong>Mettre en ligne ton site : </strong> Tu as deux grands choix.</p>
+
+    <div class="options-grille">
+      <div class="option">
+        <h4>Option 1 : Hébergement payant</h4>
+        <img src="image/image20.jfif" alt="Option 1">
+        <p>Simple et rapide : vous payez un abonnement et obtenez un domaine + un espace en ligne.</p>
+      </div>
+
+      <div class="option">
+        <h4>Option 2 : Serveur personnel</h4>
+        <img src="image/image21.jfif" alt="Option 2">
+        <p>Pour les développeurs avancés : configurez votre propre serveur et DNS.</p>
+      </div>
+    </div>
+
+ <!-- CONTACT -->
+  <section class="contact">
+    <p>
+      <img src="image/whatsapp.jfif" alt="WhatsApp Logo" style="width:24px; vertical-align:middle;">
+      Contactez-nous sur <strong>+221767327046</strong>
+    </p>
+  </section>
+
+
+</body>
+</html>
