@@ -1,295 +1,145 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Les différents types de sites - Connect In</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Actor&family=Alice&family=Arbutus&display=swap" rel="stylesheet">
-  <style>
-    /* --- STYLES GLOBAUX --- */
-    body {
-      font-family: 'Actor', sans-serif;
-      background-color: #fff;
-      margin: 0;
-      padding: 0;
-      color: #000;
-    }
+    <title>Connect In - Types de Sites</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
 
-    /* HEADER */
-header {
-  background-color: #5a2e0c; /* marron foncé */
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 40px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo img {
-  height: 45px;
-}
-
-.logo h1 {
-  font-family: 'Arbutus', cursive;
-  font-size: 1.5rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-family: 'Alice', serif;
-  font-size: 1rem;
-  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-nav a:hover {
-  color: #f0d8b6;
-}
-
-/* Boutons dans le header */
-nav a.btn-header {
-  background-color: #4b8bff;
-  padding: 8px 15px;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-nav a.btn-header:hover {
-  background-color: #3666d1;
-}
-
-
-    /* --- SECTION PRINCIPALE --- */
-    .types-section {
-      text-align: center;
-      padding: 40px 15px;
-    }
-
-    .types-section h2 {
-      font-family: 'Arbutus', cursive;
-      margin-bottom: 30px;
-      font-size: 1.5rem;
-    }
-
-    .grille-types {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .type {
-      border: 1px solid #ccc;
-      border-radius: 15px;
-      padding: 15px;
-      background-color: #fff;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .type:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-
-    .type h3 {
-      font-family: 'Arbutus', cursive;
-      font-size: 1.1rem;
-      margin-bottom: 8px;
-    }
-
-    .objectif {
-      font-size: 0.95rem;
-      color: #333;
-      margin-bottom: 10px;
-      line-height: 1.4em;
-    }
-
-    .type img {
-      width: 80px;
-      height: 80px;
-      object-fit: contain;
-      margin-top: 8px;
-    }
-
-    /* --- BOUTONS EN BAS --- */
-    .buttons-zone {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .btn-principal {
-      background-color: #2a5be2;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-weight: bold;
-    }
-
-    .btn-principal:hover {
-      transform: scale(1.05);
-      background-color: #1e47b8;
-    }
-
-    .btn-contact {
-      background-color: #e2e2e2;
-      color: #000;
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-weight: bold;
-    }
-
-    .btn-contact:hover {
-      transform: scale(1.05);
-      background-color: #ccc;
-    }
-
-    /* --- FOOTER --- */
-    footer {
-      background-color: #4b1e0f;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.95rem;
-      margin-top: 40px;
-    }
-  </style>
+    </style>
 </head>
+<body class="is-preload">
 
-<body>
-  <!-- HEADER -->
-  <header>
-    <div class="logo">
-      <img src="image/logo.png" alt="Logo Connect In">
-      <h1>Connect In</h1>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <img src="images/logo.png" alt="Logo Connect In">
+            <a href="index.html" class="logo"><strong>Connect In</strong></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index2.html">Types de Sites</a></li>
+                <li><a href="index5.html">Nos Services</a></li>
+                <li><a href="index3.html">Déploiement Web</a></li>
+            </ul>
+            <ul class="actions stacked">
+                <li><a href="https://wa.me/221767327046" class="button primary fit">Contactez-nous</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner -->
+        <section id="banner" class="major">
+            <div class="inner">
+                <header class="major">
+                    <h1>Découvrez les différents types de sites Web</h1>
+                </header>
+                <div class="content">
+                    <p>Nous vous aidons à choisir le site adapté à vos besoins.<br>Portfolio, E-commerce, Blog, Institutionnel, et plus encore.</p>
+                    <ul class="actions">
+                        <li><a href="https://wa.me/221767327046" class="button next scrolly">Contactez-nous</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+
+              <!-- SECTION TYPES DE SITES -->
+                <section class="types-section">
+                    <h2>Les différents types de site Web</h2>
+
+                    <div class="grille-types">
+                    <div class="type">
+                        <h3>Site Portfolio</h3>
+                        <img src="images/image8.jfif" alt="Site Portfolio">
+                        <p class="objectif">Présentez vos projets et réalisations de manière professionnelle.<br>Objectif : présenter vos projets, compétences et réalisations de façon claire et professionnelle.</p>
+                    </div>
+
+                    <div class="type">
+                        <h3>Site E-commerce</h3>
+                        <img src="images/image9.jfif" alt="Site E-commerce">
+                        <p class="objectif">Vendez vos produits ou services à travers une boutique en ligne.<br>Objectif : vendre vos produits ou services en ligne grâce à une boutique simple et sécurisée.</p>
+                    </div>
+
+                    <div class="type">
+                        <h3>Site Vitrine</h3>
+                        <img src="images/image10.jfif" alt="Site Vitrine">
+                        <p class="objectif">Affichez votre entreprise et gagnez en visibilité sur le web.<br>Objectif : présenter votre entreprise, vos activités et attirer de nouveaux clients.</p>
+                    </div>
+
+                    <div class="type">
+                        <h3>Site d’Actualité / Blog</h3>
+                        <img src="images/image11.jfif" alt="Site d’actualité / Blog">
+                        <p class="objectif">Publiez vos articles, partages et actualités régulièrement.<br>Objectif : partager des articles, actualités ou expériences avec votre audience.</p>
+                    </div>
+
+                    <div class="type">
+                        <h3>Site Éducatif</h3>
+                        <img src="images/image12.jfif" alt="Site Éducatif">
+                        <p class="objectif">Proposez des cours, supports et contenus pédagogiques.<br>Objectif : transmettre des connaissances, cours ou formations en ligne.</p>
+                    </div>
+
+                    <div class="type">
+                        <h3>Site Institutionnel</h3>
+                        <img src="images/image13.jfif" alt="Site Institutionnel">
+                        <p class="objectif">Présentez votre organisme ou votre institution avec clarté.<br>Objectif : communiquer les valeurs, missions et actualités d’une institution ou d’un organisme.</p>
+                    </div>
+
+                    <div class="type">
+                        <h3>Site Événementiel</h3>
+                        <img src="images/image14.jfif" alt="Site Événementiel">
+                        <p class="objectif">Créez un espace dédié à la promotion de vos événements.<br>Objectif : promouvoir un événement, gérer les inscriptions et informer les participants.</p>
+                    </div>
+
+                    <div class="type">
+                        <h3>Réseau Social / Communautaire</h3>
+                        <img src="images/image15.jfif" alt="Réseau Social / Communautaire">
+                        <p class="objectif">Fédérez une communauté autour de centres d’intérêts communs.<br>Objectif : créer un espace d’échange et d’interaction entre membres partageant des intérêts communs.</p>
+                    </div>
+
+                    <div class="type">
+                        <h3>Landing Page</h3>
+                        <img src="images/image16.jfif" alt="Landing Page">
+                        <p class="objectif">Une page unique pour présenter une offre ou attirer des clients.<br>Objectif : présenter une offre, un produit ou un service pour attirer et convertir vos visiteurs.</p>
+                    </div>
+                    </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://wa.me/221767327046" class="icon alt fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; 2025 Connect In – Tous droits réservés</li>
+                    <li>Design: <a>Connect In</a></li>
+                </ul>
+            </div>
+        </footer>
+
     </div>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">ACCUEIL</a></li>
-        <li><a href="index5.html">SERVICES</a></li>
-        <li><a href="index6.html" class="btn-header">Passer Commande</a></li>
-        <li><a href="index3.html" class="btn-header">Déploiement Web</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-  <!-- SECTION TYPES DE SITES -->
-  <section class="types-section">
-    <h2>Les différents types de site Web</h2>
-
-    <div class="grille-types">
-      <div class="type">
-        <h3>Site Portfolio</h3>
-        <img src="image/image8.jfif" alt="Site Portfolio">
-        <p class="objectif">Présentez vos projets et réalisations de manière professionnelle.<br>Objectif : présenter vos projets, compétences et réalisations de façon claire et professionnelle.</p>
-      </div>
-
-      <div class="type">
-        <h3>Site E-commerce</h3>
-        <img src="image/image9.jfif" alt="Site E-commerce">
-        <p class="objectif">Vendez vos produits ou services à travers une boutique en ligne.<br>Objectif : vendre vos produits ou services en ligne grâce à une boutique simple et sécurisée.</p>
-      </div>
-
-      <div class="type">
-        <h3>Site Vitrine</h3>
-        <img src="image/image10.jfif" alt="Site Vitrine">
-        <p class="objectif">Affichez votre entreprise et gagnez en visibilité sur le web.<br>Objectif : présenter votre entreprise, vos activités et attirer de nouveaux clients.</p>
-      </div>
-
-      <div class="type">
-        <h3>Site d’Actualité / Blog</h3>
-        <img src="image/image11.jfif" alt="Site d’actualité / Blog">
-        <p class="objectif">Publiez vos articles, partages et actualités régulièrement.<br>Objectif : partager des articles, actualités ou expériences avec votre audience.</p>
-      </div>
-
-      <div class="type">
-        <h3>Site Éducatif</h3>
-        <img src="image/image12.jfif" alt="Site Éducatif">
-        <p class="objectif">Proposez des cours, supports et contenus pédagogiques.<br>Objectif : transmettre des connaissances, cours ou formations en ligne.</p>
-      </div>
-
-      <div class="type">
-        <h3>Site Institutionnel</h3>
-        <img src="image/image13.jfif" alt="Site Institutionnel">
-        <p class="objectif">Présentez votre organisme ou votre institution avec clarté.<br>Objectif : communiquer les valeurs, missions et actualités d’une institution ou d’un organisme.</p>
-      </div>
-
-      <div class="type">
-        <h3>Site Événementiel</h3>
-        <img src="image/image14.jfif" alt="Site Événementiel">
-        <p class="objectif">Créez un espace dédié à la promotion de vos événements.<br>Objectif : promouvoir un événement, gérer les inscriptions et informer les participants.</p>
-      </div>
-
-      <div class="type">
-        <h3>Réseau Social / Communautaire</h3>
-        <img src="image/image15.jfif" alt="Réseau Social / Communautaire">
-        <p class="objectif">Fédérez une communauté autour de centres d’intérêts communs.<br>Objectif : créer un espace d’échange et d’interaction entre membres partageant des intérêts communs.</p>
-      </div>
-
-      <div class="type">
-        <h3>Landing Page</h3>
-        <img src="image/image16.jfif" alt="Landing Page">
-        <p class="objectif">Une page unique pour présenter une offre ou attirer des clients.<br>Objectif : présenter une offre, un produit ou un service pour attirer et convertir vos visiteurs.</p>
-      </div>
-    </div>
-
-    <div class="buttons-zone">
-      <a href="index6.html" class="btn-principal">Créer votre Site Web</a>
-      <a href="index5.html" class="btn-contact">Bénéficier de nos Services</a>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact">
-    <p>
-      <img src="image/whatsapp.jfif" alt="WhatsApp Logo" style="width:24px; vertical-align:middle;">
-      Contactez-nous sur <strong>+221767327046</strong>
-    </p>
-  </section>
-
-  <!-- PROMOTION -->
-  <section class="promo">
-    <div class="promo-images">
-      <img src="image/image5.jfif" alt="Illustration promo 1" class="promo-img">
-      <img src="image/image1.png" alt="Illustration centrale" class="promo-img promo-central">
-      <img src="image/image6.jfif" alt="Illustration promo 2" class="promo-img">
-    </div>
-
-    <div class="promo-text">
-      <a href="#" class="btn-contact">CONTACTEZ-NOUS</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>Obtenez un site web à prix très accessible et abordable.<br>Qu’attendez-vous ?</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
